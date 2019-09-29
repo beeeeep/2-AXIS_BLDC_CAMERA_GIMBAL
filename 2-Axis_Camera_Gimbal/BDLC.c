@@ -349,10 +349,7 @@ ISR(TIMER1_OVF_vect)
 		OCR0B = motory_phase1;
 		OCR2B = motory_phase2;
 		OCR1B = motory_phase3;
-		extmotorPos++;
-		motory_phase1 = sinewave_data_y[extmotorPos];
-		motory_phase2 = sinewave_data_y[extmotorPos + 85];
-		motory_phase3 = sinewave_data_y[extmotorPos + 170];
+	
 
 		motorUpdate = 1;
 		int_counter = 0;
