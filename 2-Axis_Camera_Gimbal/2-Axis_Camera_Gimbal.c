@@ -94,7 +94,7 @@ int main(void)
 		
 			
 			_delay_ms(100);       //Debounce
-			PID_y++;
+			
 			BDLC_MotorX_Run(0);   //Freeze motors
 			BDLC_MotorY_Run(0);
 			
