@@ -78,8 +78,8 @@ int main(void)
 			ADC_get_values(&Joystick);
 			PID_x=pid_Controller_x(Joystick.x,compl_angles_0.x,&PID_Factors_X); //0.19ms
 			PID_y=pid_Controller_y(Joystick.y,compl_angles_0.y,&PID_Factors_Y); //0.19ms
-			BDLC_MotorX_Run(PID_x);
-			BDLC_MotorY_Run(PID_y);
+			BDLC_MotorX_Run_inst(PID_x);
+			BDLC_MotorY_Run_inst(PID_y);
 			
 		   
 			
